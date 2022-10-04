@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+    color:white
+}
+
+header{background-color:blue; grid-area: gh}
+
+main{background-color: aqua; grid-area: gm}
+
+aside{background-color: rgb(255, 0, 30); grid-area: ga}
+
+.grid-container {
+    display: grid;
+    background-color: gainsboro;
+    max-width: 1000px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100px auto;
+    grid-template-areas: "gh gh gh gh gh gh" "gm gm gm gm ga ga";
+}
+
+.grid-container-2 {
+    display: grid;
+    background-color: darkblue;
+    max-width: 1000px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100px 40px 100px;
+}
